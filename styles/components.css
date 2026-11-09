@@ -1,0 +1,12 @@
+.ww-button { display:inline-flex; align-items:center; justify-content:center; gap:12px; padding:12px 18px; border:1px solid var(--ww-border); border-radius:var(--ww-radius-control); font:600 14px/1.4 var(--ww-font-sans); color:var(--ww-text); background:var(--ww-surface-raised); text-decoration:none; cursor:pointer; transition:background var(--ww-motion),transform var(--ww-motion); }
+.ww-button:hover { background:var(--ww-surface-hover); }
+.ww-button-primary { color:var(--ww-on-accent); background:var(--ww-accent); border-color:var(--ww-accent); }
+.ww-button-primary:hover { background:var(--ww-accent-hover); transform:translateY(-1px); }
+.ww-button:focus-visible,.ww-input:focus-visible { outline:2px solid var(--ww-focus); outline-offset:4px; }
+.ww-button:disabled,.ww-button[aria-disabled="true"] { opacity:.5; cursor:not-allowed; transform:none; }
+.ww-input { width:100%; color:var(--ww-text); background:var(--ww-surface); border:1px solid var(--ww-border); border-radius:var(--ww-radius-control); padding:12px; font:inherit; }
+.ww-panel { background:var(--ww-surface); border:1px solid var(--ww-border); border-radius:var(--ww-radius-panel); padding:var(--ww-space-6); }
+.ww-label { font:600 11px/1.5 var(--ww-font-sans); letter-spacing:.14em; color:var(--ww-text-muted); text-transform:uppercase; }
+.ww-icon { width:24px; height:24px; flex-shrink:0; vertical-align:middle; }
+.ww-brand { display:inline-flex; align-items:center; gap:10px; color:var(--ww-accent); font:750 16px/1.4 var(--ww-font-sans); letter-spacing:.1em; }
+@media(prefers-reduced-motion:reduce) { .ww-button { transition:none; } }

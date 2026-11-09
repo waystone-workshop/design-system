@@ -1,0 +1,10 @@
+{
+  "name": "@waystone-workshop/design-system",
+  "version": "0.1.0",
+  "description": "Shared visual foundations and assets for Waystone Workshop products",
+  "license": "MIT",
+  "repository": "github:waystone-workshop/design-system",
+  "main": "index.cjs",
+  "files": ["index.cjs", "styles", "assets", "LICENSE", "THIRD_PARTY_NOTICES.md", "README.md"],
+  "scripts": {"test": "node --test test/*.test.cjs", "start": "node serve.cjs"}
+}

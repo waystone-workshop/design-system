@@ -1,0 +1,28 @@
+/* Workshop foundations v0.1.0. Change semantic tokens here, not in each product. */
+:root {
+  --ww-font-sans: Inter, "Segoe UI", system-ui, -apple-system, sans-serif;
+  --ww-font-mono: "Cascadia Code", "SFMono-Regular", Consolas, monospace;
+  --ww-bg: #141713;
+  --ww-surface: #1c2019;
+  --ww-surface-raised: #252c20;
+  --ww-surface-hover: #323d2a;
+  --ww-text: #eeeede;
+  --ww-text-muted: #a2ac97;
+  --ww-text-subtle: #858e7a;
+  --ww-accent: #d4e99b;
+  --ww-accent-hover: #e3f4b8;
+  --ww-on-accent: #202719;
+  --ww-border: #3b4433;
+  --ww-focus: #b6d581;
+  --ww-success: #9ce8c3;
+  --ww-danger: #ffc4bb;
+  --ww-space-1: 4px;
+  --ww-space-2: 8px;
+  --ww-space-3: 12px;
+  --ww-space-4: 16px;
+  --ww-space-6: 24px;
+  --ww-space-8: 32px;
+  --ww-radius-control: 8px;
+  --ww-radius-panel: 14px;
+  --ww-motion: 160ms ease;
+}

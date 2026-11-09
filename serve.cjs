@@ -1,0 +1,3 @@
+const {createServer}=require('node:http'),{readFile}=require('node:fs/promises'),{resolve,sep,extname}=require('node:path');
+const root=__dirname,types={'.html':'text/html','.css':'text/css','.svg':'image/svg+xml'};
+createServer(async(req,res)=>{try{const pathname=decodeURIComponent(new URL(req.url,'http://localhost').pathname);const file=resolve(root,'.'+(pathname==='/'?'/index.html':pathname));if(!file.startsWith(root+sep)||!['.html','.css','.svg'].includes(extname(file))){res.writeHead(404).end();return}const body=await readFile(file);res.writeHead(200,{'Content-Type':types[extname(file)],'X-Content-Type-Options':'nosniff'});res.end(body)}catch{res.writeHead(404).end('Not found')}}).listen(4174,'127.0.0.1',()=>console.log('Design library: http://localhost:4174'));
